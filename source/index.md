@@ -16,14 +16,17 @@ search: true
 
 # Introduction
 
-The REST API lets you interact with Parse from anything that can send an HTTP request. There are many things you can do with the REST API. For example:
+Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
 
-A mobile website can access Parse data from JavaScript.
-A webserver can show data from Parse on a website.
-You can upload large amounts of data that will later be consumed in a mobile app.
-You can download recent data to run your own custom analytics.
-Applications written in any programming language can interact with data on Parse.
-You can export all of your data if you no longer want to use Parse.
+We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+
+This example API documentation page was created with [Slate](http://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
+
+```shell
+# With shell, you can just pass the correct header with each request
+curl "api_endpoint_here"
+  -H "Authorization: meowmeowmeow"
+```
 
 > Make sure to replace `meowmeowmeow` with your API key.
 
