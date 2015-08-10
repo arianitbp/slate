@@ -41,6 +41,8 @@ You must replace `meowmeowmeow` with your personal API key.
 
 ## Get All Contacts
 
+### Get Contact by ID
+
 ```shell
 curl "http://example.com/api/kittens"
   -H "Authorization: meowmeowmeow"
