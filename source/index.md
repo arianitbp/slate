@@ -39,7 +39,7 @@ You must replace `...........` with your personal API key.
 
 # Contacts
 
-### Get All Contacts
+## Get All Contacts
 
 ```shell
 curl "https://whispering-garden-5307.herokuapp.com/api/db"
@@ -49,22 +49,24 @@ curl "https://whispering-garden-5307.herokuapp.com/api/db"
 > The above command returns JSON structured like this:
 
 ```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Isis",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
+ [
+    {
+      "id": 12,
+      "name": "hotelkey",
+      "lastname": "app",
+      "address": "Prishtine",
+      "phonenumber": "1",
+      "email": null
+    },
+    {
+      "id": 13,
+      "name": "hotelkey1",
+      "lastname": "app1",
+      "address": "Prishtine1",
+      "phonenumber": "12",
+      "email": null
+    }
+ ]
 ```
 
 This endpoint retrieves all kittens.
