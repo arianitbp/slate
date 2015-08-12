@@ -31,21 +31,21 @@ Kittn uses API keys to allow access to the API. You can register a new Kittn API
 
 Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
-`Authorization: meowmeowmeow`
+`Authorization: .............`
 
 <aside class="notice">
-You must replace `meowmeowmeow` with your personal API key.
+You must replace `..........` with your personal API key.
 </aside>
 
 # Contacts
 
 ## Get All Contacts
 
-### Get Contact by ID
+### Get All Contacts
 
 ```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
+curl "https://whispering-garden-5307.herokuapp.com/api/db"
+  -H "Authorization: ..............."
 ```
 
 > The above command returns JSON structured like this:
