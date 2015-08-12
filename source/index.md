@@ -37,7 +37,7 @@ Kittn expects for the API key to be included in all API requests to the server i
 You must replace `meowmeowmeow` with your personal API key.
 </aside>
 
-# Contact
+# Contacts
 
 ## Get All Contacts
 
