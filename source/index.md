@@ -2,7 +2,7 @@
 title: API Documentation
 
 language_tabs:
-  - shell
+  - node.JS
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
