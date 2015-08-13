@@ -41,7 +41,7 @@ You must replace `...........` with your personal API key.
 
 ## Get All Contacts
 
-```node.JS
+```shell
 curl -X GET -H "Content-type: application/json" -H "Accept: application/json" https://whispering-garden-5307.herokuapp.com/api/db
 ```
 
@@ -87,9 +87,8 @@ Remember — a happy kitten is an authenticated kitten!
 
 ## Get a Specific Contact
 
-```node.JS
+```shell
 curl -X GET -H "Content-type: application/json" -H "Accept: application/json" https://whispering-garden-5307.herokuapp.com/api/db/<ID>
-  -H "Authorization: meowmeowmeow"
 ```
 
 > The above command returns JSON structured like this:
