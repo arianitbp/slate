@@ -82,7 +82,7 @@ include_cats | false | If set to true, the result will also include cats.
 available | true | If set to false, the result will include kittens that have already been adopted.
 
 <aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+Remember — a happy contact is an authenticated contact!
 </aside>
 
 ## Get a Specific Contact
@@ -118,3 +118,36 @@ Parameter | Description
 --------- | -----------
 ID | The ID of the cat to retrieve
 
+## Post All Contacts
+
+```shell
+curl -i -X POST -H "Content-Type: application/json" -d "{""name"":""hotelkey4"",""phonenumber"":""123456""}" https://whispering-garden-5307.herokuapp.com/api/db
+```
+
+> The above command returns JSON structured like this:
+
+```json
+ [
+    {
+      "id": 14,
+      "name": "hotelkey4",
+      "lastname": "",
+      "address": "",
+      "phonenumber": "123456",
+      "email": null
+    }
+ ]
+```
+
+This endpoint retrieves all contacts.
+
+### HTTP Request
+
+`POST https://whispering-garden-5307.herokuapp.com/api/db`
+
+### Query Parameters
+
+Parameter | Default | Description
+--------- | ------- | -----------
+include_cats | false | If set to true, the result will also include cats.
+available | true | If set to false, the result will include contacts that have already been adopted.
