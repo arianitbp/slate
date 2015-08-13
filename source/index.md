@@ -41,9 +41,8 @@ You must replace `...........` with your personal API key.
 
 ## Get All Contacts
 
-```shell
-curl "https://whispering-garden-5307.herokuapp.com/api/db"
-  -H "Authorization: ............"
+```node.JS
+curl -X GET -H "Content-type: application/json" -H "Accept: application/json" https://whispering-garden-5307.herokuapp.com/api/db
 ```
 
 > The above command returns JSON structured like this:
@@ -69,7 +68,7 @@ curl "https://whispering-garden-5307.herokuapp.com/api/db"
  ]
 ```
 
-This endpoint retrieves all kittens.
+This endpoint retrieves all contacts.
 
 ### HTTP Request
 
@@ -86,24 +85,10 @@ available | true | If set to false, the result will include kittens that have al
 Remember — a happy kitten is an authenticated kitten!
 </aside>
 
-## Get a Specific Kitten
+## Get a Specific Contact
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/3"
+```node.JS
+curl -X GET -H "Content-type: application/json" -H "Accept: application/json" https://whispering-garden-5307.herokuapp.com/api/db/<ID>
   -H "Authorization: meowmeowmeow"
 ```
 
@@ -119,13 +104,13 @@ curl "http://example.com/api/kittens/3"
 }
 ```
 
-This endpoint retrieves a specific kitten.
+This endpoint retrieves a specific contact.
 
 <aside class="warning">If you're not using an administrator API key, note that some kittens will return 403 Forbidden if they are hidden for admins only.</aside>
 
 ### HTTP Request
 
-`GET http://example.com/kittens/<ID>`
+`GET https://whispering-garden-5307.herokuapp.com/api/db/<ID>`
 
 ### URL Parameters
 
