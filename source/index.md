@@ -118,7 +118,7 @@ Parameter | Description
 --------- | -----------
 ID | The ID of the cat to retrieve
 
-## Post All Contacts
+## Post a Contact
 
 ```shell
 curl -i -X POST -H "Content-Type: application/json" -d "{""name"":""hotelkey4"",""phonenumber"":""123456""}" https://whispering-garden-5307.herokuapp.com/api/db
@@ -151,3 +151,69 @@ Parameter | Default | Description
 --------- | ------- | -----------
 include_cats | false | If set to true, the result will also include cats.
 available | true | If set to false, the result will include contacts that have already been adopted.
+
+## Put a Contact
+
+```shell
+curl -i -X PUT -H "Content-Type: application/json" -d "{""id"":""12"", ""name"":""hotelkey"",""address"":""Pejë"", ""phonenumber"":""111""}" https://whispering-garden-5307.herokuapp.com/api/db
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+ "id": 12,
+      "name": "hotelkey",
+      "lastname": "app",
+      "address": "Pejë",
+      "phonenumber": "1",
+      "email": null
+}
+```
+
+This endpoint retrieves a specific contact.
+
+<aside class="warning">If you're not using an administrator API key, note that some contacts will return 403 Forbidden if they are hidden for admins only.</aside>
+
+### HTTP Request
+
+`PUT https://whispering-garden-5307.herokuapp.com/api/db`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+ID | The ID of the cat to retrieve
+
+## Delete a Contact
+
+```shell
+curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""12""}" https://whispering-garden-5307.herokuapp.com/api/db
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+ "id": 12,
+      "name": "hotelkey",
+      "lastname": "app",
+      "address": "Prishtine",
+      "phonenumber": "1",
+      "email": null
+}
+```
+
+This endpoint retrieves a specific contact.
+
+<aside class="warning">If you're not using an administrator API key, note that some contacts will return 403 Forbidden if they are hidden for admins only.</aside>
+
+### HTTP Request
+
+`DELETE https://whispering-garden-5307.herokuapp.com/api/db`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+ID | The ID of the cat to retrieve
