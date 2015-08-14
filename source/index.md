@@ -78,8 +78,12 @@ This endpoint retrieves all contacts.
 
 Parameter | Default | Description
 --------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+ID | false | If set to true, the result will also include cats.
+Name | true | If set to false, the result will include contacts that have already been adopted.
+LastName | false | If set to true, the result will also include cats.
+Address | false | If set to true, the result will also include cats.
+PhoneNumber | false | If set to true, the result will also include cats.
+Email | false | If set to true, the result will also include cats.
 
 <aside class="success">
 Remember — a happy contact is an authenticated contact!
@@ -139,7 +143,7 @@ curl -i -X POST -H "Content-Type: application/json" -d "{""name"":""hotelkey4"",
  ]
 ```
 
-This endpoint retrieves all contacts.
+This endpoint create a contact.
 
 ### HTTP Request
 
@@ -171,7 +175,7 @@ curl -i -X PUT -H "Content-Type: application/json" -d "{""id"":""12"", ""name"":
 }
 ```
 
-This endpoint retrieves a specific contact.
+This endpoint update a specific contact.
 
 <aside class="warning">If you're not using an administrator API key, note that some contacts will return 403 Forbidden if they are hidden for admins only.</aside>
 
@@ -204,7 +208,7 @@ curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""12""}" https
 }
 ```
 
-This endpoint retrieves a specific contact.
+This endpoint delete a specific contact.
 
 <aside class="warning">If you're not using an administrator API key, note that some contacts will return 403 Forbidden if they are hidden for admins only.</aside>
 
