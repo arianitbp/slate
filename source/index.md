@@ -261,7 +261,6 @@ curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""2""}" https:
 
 This endpoint delete a specific contact.
 
-<aside class="warning">If you're not using an administrator API key, note that some contacts will return 403 Forbidden if they are hidden for admins only.</aside>
 
 ### HTTP Request
 
