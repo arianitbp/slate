@@ -260,7 +260,6 @@ curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""2""}" https:
 ```json
 {
  [
- 
  ]
 }
 ```
