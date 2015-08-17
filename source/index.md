@@ -49,21 +49,65 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" ht
 
 ```json
  [
-    {
-      "id": 12,
-      "name": "hotelkey",
-      "lastname": "app",
-      "address": "Prishtine",
-      "phonenumber": "1",
-      "email": null
+     {
+      "id": 1,
+      "name": "Hotel1",
+      "lastname": "KeyApp1",
+      "address": "Prishtine1",
+      "phonenumber1": "+38649111111",
+      "email": "hotel1@keyapp.com",
+      "phonenumber2": "+38649222222",
+      "phonenumber3": "+38649333333",
+      "phonenumber4": "+38649444444",
+      "phonenumber5": "+38649555555"
     },
     {
-      "id": 13,
-      "name": "hotelkey1",
-      "lastname": "app1",
-      "address": "Prishtine1",
-      "phonenumber": "12",
-      "email": null
+      "id": 2,
+      "name": "Hotel2",
+      "lastname": "KeyApp2",
+      "address": "Prishtine2",
+      "phonenumber1": "+38649111111",
+      "email": "hotel2@keyapp.com",
+      "phonenumber2": "+38649222222",
+      "phonenumber3": "+38649333333",
+      "phonenumber4": "+38649444444",
+      "phonenumber5": "+38649555555"
+    },
+    {
+      "id": 3,
+      "name": "Hotel3",
+      "lastname": "KeyApp3",
+      "address": "Prishtine3",
+      "phonenumber1": "+38649111111",
+      "email": "hotel3@keyapp.com",
+      "phonenumber2": "+38649222222",
+      "phonenumber3": "+38649333333",
+      "phonenumber4": "+38649444444",
+      "phonenumber5": "+38649555555"
+    },
+    {
+      "id": 4,
+      "name": "Hotel4",
+      "lastname": "KeyApp4",
+      "address": "Prishtine4",
+      "phonenumber1": "+38649111111",
+      "email": "hotel4@keyapp.com",
+      "phonenumber2": "+38649222222",
+      "phonenumber3": "+38649333333",
+      "phonenumber4": "+38649444444",
+      "phonenumber5": "+38649555555"
+    },
+    {
+      "id": 5,
+      "name": "Hotel5",
+      "lastname": "KeyApp5",
+      "address": "Prishtine5",
+      "phonenumber1": "+38649111111",
+      "email": "hotel5@keyapp.com",
+      "phonenumber2": "+38649222222",
+      "phonenumber3": "+38649333333",
+      "phonenumber4": "+38649444444",
+      "phonenumber5": "+38649555555"
     }
  ]
 ```
@@ -98,14 +142,20 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" ht
 > The above command returns JSON structured like this:
 
 ```json
-{
- "id": 12,
-      "name": "hotelkey",
-      "lastname": "app",
-      "address": "Prishtine",
-      "phonenumber": "1",
-      "email": null
-}
+[
+    {
+      "id": 1,
+      "name": "Hotel1",
+      "lastname": "KeyApp1",
+      "address": "Prishtine1",
+      "phonenumber1": "+38649111111",
+      "email": "hotel1@keyapp.com",
+      "phonenumber2": "+38649222222",
+      "phonenumber3": "+38649333333",
+      "phonenumber4": "+38649444444",
+      "phonenumber5": "+38649555555"
+    }
+ ]
 ```
 
 This endpoint retrieves a specific contact.
@@ -125,7 +175,7 @@ ID | The ID of the cat to retrieve
 ## Post a Contact
 
 ```shell
-curl -i -X POST -H "Content-Type: application/json" -d "{""name"":""hotelkey4"",""phonenumber"":""123456""}" https://whispering-garden-5307.herokuapp.com/api/db
+curl -i -X POST -H "Content-Type: application/json" -d "{""name"":""Hotel1"",""lastname"":""KeyApp1"",""address"":""Prishtine1"",""phonenumber1"":""+38649111111"",""email"":""hotel1@keyapp.com"",""phonenumber2"":""+38649222222"",""phonenumber3"":""+38649333333"",""phonenumber4"":""+38649444444"",""phonenumber5"":""+38649555555""}" https://whispering-garden-5307.herokuapp.com/api/db
 ```
 
 > The above command returns JSON structured like this:
@@ -133,12 +183,16 @@ curl -i -X POST -H "Content-Type: application/json" -d "{""name"":""hotelkey4"",
 ```json
  [
     {
-      "id": 14,
-      "name": "hotelkey4",
-      "lastname": "",
-      "address": "",
-      "phonenumber": "123456",
-      "email": null
+      "id": 6,
+      "name": "Hotel6",
+      "lastname": "KeyApp6",
+      "address": "Prishtine6",
+      "phonenumber1": "+38649111111",
+      "email": "hotel6@keyapp.com",
+      "phonenumber2": "+38649222222",
+      "phonenumber3": "+38649333333",
+      "phonenumber4": "+38649444444",
+      "phonenumber5": "+38649555555"
     }
  ]
 ```
@@ -159,20 +213,26 @@ available | true | If set to false, the result will include contacts that have a
 ## Put a Contact
 
 ```shell
-curl -i -X PUT -H "Content-Type: application/json" -d "{""id"":""12"", ""name"":""hotelkey"",""address"":""Pejë"", ""phonenumber"":""111""}" https://whispering-garden-5307.herokuapp.com/api/db
+curl -i -X PUT -H "Content-Type: application/json" -d "{""id"":""1"",""name"":""Hotel1"",""lastname"":""KeyApp1"",""address"":""Prishtine1"",""phonenumber1"":""+38649111111"",""email"":""hotel1@keyapp.com"",""phonenumber2"":""+38649222222"",""phonenumber3"":""+38649333333"",""phonenumber4"":""+38649444444"",""phonenumber5"":""+38649555555""}" https://whispering-garden-5307.herokuapp.com/api/db
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
-{
- "id": 12,
-      "name": "hotelkey",
-      "lastname": "app",
-      "address": "Pejë",
-      "phonenumber": "1",
-      "email": null
-}
+ [
+    {
+      "id": 1,
+      "name": "Hotel1",
+      "lastname": "KeyApp1",
+      "address": "NewYork",
+      "phonenumber1": "+38649111111",
+      "email": "hotel1@keyapp.com",
+      "phonenumber2": "+38649222222",
+      "phonenumber3": "+38649333333",
+      "phonenumber4": "+38649444444",
+      "phonenumber5": "+38649555555"
+    }
+ ]
 ```
 
 This endpoint update a specific contact.
@@ -192,19 +252,16 @@ ID | The ID of the cat to retrieve
 ## Delete a Contact
 
 ```shell
-curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""12""}" https://whispering-garden-5307.herokuapp.com/api/db
+curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""2""}" https://whispering-garden-5307.herokuapp.com/api/db
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
 {
- "id": 12,
-      "name": "hotelkey",
-      "lastname": "app",
-      "address": "Prishtine",
-      "phonenumber": "1",
-      "email": null
+ [
+ 
+ ]
 }
 ```
 
@@ -221,3 +278,6 @@ This endpoint delete a specific contact.
 Parameter | Description
 --------- | -----------
 ID | The ID of the cat to retrieve
+
+
+
