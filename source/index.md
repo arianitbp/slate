@@ -122,12 +122,16 @@ This endpoint retrieves all contacts.
 
 Parameter | Default | Description
 --------- | ------- | -----------
-ID | false | If set to true, the result will also include cats.
+ID | false | If set to true, the result will also include contacts.
 Name | true | If set to false, the result will include contacts that have already been adopted.
-LastName | false | If set to true, the result will also include cats.
-Address | false | If set to true, the result will also include cats.
-PhoneNumber | false | If set to true, the result will also include cats.
-Email | false | If set to true, the result will also include cats.
+LastName | false | If set to true, the result will also include contacts.
+Address | false | If set to true, the result will also include contacts.
+PhoneNumber1 | false | If set to true, the result will also include contacts.
+Email | false | If set to true, the result will also include contacts.
+PhoneNumber2 | false | If set to true, the result will also include contacts.
+PhoneNumber3 | false | If set to true, the result will also include contacts.
+PhoneNumber4 | false | If set to true, the result will also include contacts.
+PhoneNumber5 | false | If set to true, the result will also include contacts.
 
 <aside class="success">
 Remember — a happy contact is an authenticated contact!
@@ -170,7 +174,7 @@ This endpoint retrieves a specific contact.
 
 Parameter | Description
 --------- | -----------
-ID | The ID of the cat to retrieve
+ID | The ID of the contact to retrieve
 
 ## Post a Contact
 
@@ -207,7 +211,7 @@ This endpoint create a contact.
 
 Parameter | Default | Description
 --------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
+contacts | false | If set to true, the result will also include contacts.
 available | true | If set to false, the result will include contacts that have already been adopted.
 
 ## Put a Contact
@@ -247,7 +251,7 @@ This endpoint update a specific contact.
 
 Parameter | Description
 --------- | -----------
-ID | The ID of the cat to retrieve
+ID | The ID of the contact to retrieve
 
 ## Delete a Contact
 
@@ -277,7 +281,7 @@ This endpoint delete a specific contact.
 
 Parameter | Description
 --------- | -----------
-ID | The ID of the cat to retrieve
+ID | The ID of the contact to retrieve
 
 
 
