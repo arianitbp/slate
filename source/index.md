@@ -25,17 +25,9 @@ You can download recent data to run your own custom analytics.
 Applications written in any programming language can interact with data on Parse.
 You can export all of your data if you no longer want to use Parse.
 
-> Make sure to replace `.............` with your API key.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
-`Authorization: ..........`
-
-<aside class="notice">
-You must replace `...........` with your personal API key.
-</aside>
 
 # Contacts
 
@@ -164,7 +156,6 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" ht
 
 This endpoint retrieves a specific contact.
 
-<aside class="warning">If you're not using an administrator API key, note that some contacts will return 403 Forbidden if they are hidden for admins only.</aside>
 
 ### HTTP Request
 
@@ -241,7 +232,6 @@ curl -i -X PUT -H "Content-Type: application/json" -d "{""id"":""1"",""name"":""
 
 This endpoint update a specific contact.
 
-<aside class="warning">If you're not using an administrator API key, note that some contacts will return 403 Forbidden if they are hidden for admins only.</aside>
 
 ### HTTP Request
 

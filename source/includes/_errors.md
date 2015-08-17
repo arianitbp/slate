@@ -7,13 +7,15 @@ The REST API uses the following error codes:
 
 Error Code | Meaning
 ---------- | -------
-400 | Bad Request -- Your request sucks
+400 | Enter a valid Page
 401 | Unauthorized -- Your API key is wrong
 403 | Forbidden -- The contact requested is hidden for administrators only
 404 | Not Found -- The specified contact could not be found
-405 | Method Not Allowed -- You tried to access a contact with an invalid method
+405 | Enter a valid ID
 406 | Not Acceptable -- You requested a format that isn't json
+408 | Enter a valid phone-number
 410 | Gone -- The contact requested has been removed from our servers
+412 | Field Name is required
 418 | I'm a teapot
 429 | Too Many Requests -- You're requesting too many contacts! Slown down!
 500 | Internal Server Error -- We had a problem with our server. Try again later.
