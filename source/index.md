@@ -258,10 +258,20 @@ curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""2""}" https:
 > The above command returns JSON structured like this:
 
 ```json
-{
  [
+    {
+      "id": 1,
+      "name": "Hotel1",
+      "lastname": "KeyApp1",
+      "address": "NewYork",
+      "phonenumber1": "+38649111111",
+      "email": "hotel1@keyapp.com",
+      "phonenumber2": "+38649222222",
+      "phonenumber3": "+38649333333",
+      "phonenumber4": "+38649444444",
+      "phonenumber5": "+38649555555"
+    }
  ]
-}
 ```
 
 This endpoint delete a specific contact.
