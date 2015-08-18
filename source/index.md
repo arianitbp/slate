@@ -61,7 +61,7 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" ht
 				  "email": "hotel2@keyapp.com",
 				  "phonenumber1": "+38649111111",
 				  "phonenumber4": "+38649444444",
-				  "phonenumber5": "+null"
+				  "phonenumber5": "null"
 				},
 				{
 				  "id": 3,
@@ -73,7 +73,6 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" ht
 				  "phonenumber3": "0038649333333",
 				  "phonenumber4": "0038649444444",
 				}
-  
 			]
 }
 ```
@@ -142,23 +141,12 @@ curl -i -X POST -H "Content-Type: application/json" -d "{""name"":""Hotel1"",""l
 > The above command returns JSON structured like this:
 
 ```json
- [
-    {
-      "id": 6,
-      "name": "Hotel6",
-      "lastname": "KeyApp6",
-      "address": "Prishtine6",
-      "phonenumber1": "+38649111111",
-      "email": "hotel6@keyapp.com",
-      "phonenumber2": "+38649222222",
-      "phonenumber3": "+38649333333",
-      "phonenumber4": "+38649444444",
-      "phonenumber5": "+38649555555"
-    }
- ]
+{
+	"success": "Contact inserted with success into database."
+}
 ```
 
-<aside class="notice">This endpoint create a contact.</aside>
+- This endpoint create a contact.
 
 ### HTTP Request
 
@@ -166,18 +154,20 @@ curl -i -X POST -H "Content-Type: application/json" -d "{""name"":""Hotel1"",""l
 
 ### Query Parameters
 
-Parameter | Default | Description
---------- | ------- | -----------
-ID | auto-increment | ID of a contact generated automatically.
-Name | true | If set to false, the result will include contacts that have already been adopted.
-LastName | false | If set to true, the result will also include contacts.
-Address | false | If set to true, the result will also include contacts.
-PhoneNumber1 | false | If set to true, the result will also include contacts.
-Email | false | If set to true, the result will also include contacts.
-PhoneNumber2 | false | If set to true, the result will also include contacts.
-PhoneNumber3 | false | If set to true, the result will also include contacts.
-PhoneNumber4 | false | If set to true, the result will also include contacts.
-PhoneNumber5 | false | If set to true, the result will also include contacts.
+Parameter | Default | Type | Description
+--------- | ------- | ------- | -----------
+ID | auto-increment, false | integer | ID of a contact generated automatically.
+Name | true | text | If set to false, the result will include contacts that have already been adopted.
+LastName | false | text | If set to true, the result will also include contacts.
+Address | false | text | If set to true, the result will also include contacts.
+PhoneNumber1 | false | text | If set to true, the result will also include contacts.
+Email | false | text | If set to true, the result will also include contacts.
+PhoneNumber2 | false | text | If set to true, the result will also include contacts.
+PhoneNumber3 | false | text | If set to true, the result will also include contacts.
+PhoneNumber4 | false | text | If set to true, the result will also include contacts.
+PhoneNumber5 | false | text | If set to true, the result will also include contacts.
+
+<aside class="notice">If you forget to fill the field of Name then can't create any contact. For other fields doesn't matter.</aside>
 
 ## Put a Contact
 
@@ -188,23 +178,12 @@ curl -i -X PUT -H "Content-Type: application/json" -d "{""id"":""1"",""name"":""
 > The above command returns JSON structured like this:
 
 ```json
- [
-    {
-      "id": 1,
-      "name": "Hotel1",
-      "lastname": "KeyApp1",
-      "address": "NewYork",
-      "phonenumber1": "+38649111111",
-      "email": "hotel1@keyapp.com",
-      "phonenumber2": "+38649222222",
-      "phonenumber3": "+38649333333",
-      "phonenumber4": "+38649444444",
-      "phonenumber5": "+38649555555"
-    }
- ]
+{
+	"success": "Contact updated with success into database."
+}
 ```
 
-<aside class="notice">This endpoint update a specific contact.</aside>
+- This endpoint update a specific contact.
 
 
 ### HTTP Request
@@ -213,23 +192,25 @@ curl -i -X PUT -H "Content-Type: application/json" -d "{""id"":""1"",""name"":""
 
 ### URL Parameters
 
-Parameter | Default | Description
---------- | ------- | -----------
-ID | true | ID of a contact to update.
-Name | false | If set to true, it will change the name of contact.
-LastName | false | If set to true, it will change the lastname of contact.
-Address | false | If set to true, it will change the address of contact.
-PhoneNumber1 | false | If set to true, it will change the phone number of contact.
-Email | false | If set to true, it will change the email of contact.
-PhoneNumber2 | false | If set to true, it will change the phone number of contact.
-PhoneNumber3 | false | If set to true, it will change the phone number of contact.
-PhoneNumber4 | false | If set to true, it will change the phone number of contact.
-PhoneNumber5 | false | If set to true, it will change the phone number of contact.
+Parameter | Default | Type | Description
+--------- | ------- | ------- | -----------
+ID | true | integer | ID of a contact to update.
+Name | false | text | If set to true, it will change the name of contact.
+LastName | false | text | If set to true, it will change the lastname of contact.
+Address | false | text | If set to true, it will change the address of contact.
+PhoneNumber1 | false | text | If set to true, it will change the phone number of contact.
+Email | false | text | If set to true, it will change the email of contact.
+PhoneNumber2 | false | text | If set to true, it will change the phone number of contact.
+PhoneNumber3 | false | text | If set to true, it will change the phone number of contact.
+PhoneNumber4 | false | text | If set to true, it will change the phone number of contact.
+PhoneNumber5 | false | text | If set to true, it will change the phone number of contact.
+
+<aside class="notice">It will return error if you don't use an ID.</aside>
 
 ## Delete a Contact
 
 ```shell
-curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""2""}" https://whispering-garden-5307.herokuapp.com/api/db
+curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""2""}" https://whispering-garden-5307.herokuapp.com/api/db"
 ```
 
 > The above command returns JSON structured like this:
@@ -237,12 +218,12 @@ curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""2""}" https:
 ```json
  [
     {
-      
+      "success": "Contact updated with success in the database."
     }
  ]
 ```
 
-<aside class="notice">This endpoint delete a specific contact.</aside>
+- This endpoint delete a specific contact.
 
 
 ### HTTP Request
@@ -251,9 +232,8 @@ curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""2""}" https:
 
 ### URL Parameters
 
-Parameter | Description
---------- | -----------
-ID | The ID of the contact to retrieve
+Parameter | Requirement | Type | Description
+--------- | ----------- | --------- | -----------
+ID | true | integer | The ID of the contact to retrieve
 
-
-
+<aside class="notice">When you want to delete a contact you can do it by chosing any ID.</aside>
