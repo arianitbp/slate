@@ -71,8 +71,8 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" "h
 				  "email": "hotel3@keyapp.com",
 				  "phonenumber2": "0038649222222",
 				  "phonenumber3": "0038649333333",
-				  "phonenumber4": "0038649444444",
-				},
+				  "phonenumber4": "0038649444444"
+				}
 			]
 }
 ```
