@@ -14,8 +14,6 @@ Error Code | Meaning
 405 | Enter a valid ID
 406 | Not Acceptable -- You requested a format that isn't json
 408 | Enter a valid phone-number
-410 | Gone -- The contact requested has been removed from our servers
 412 | Field Name is required
-429 | Too Many Requests -- You're requesting too many contacts! Slown down!
 500 | Internal Server Error -- We had a problem with our server. Try again later.
 503 | Service Unavailable -- We're temporarially offline for maintanance. Please try again later.
