@@ -103,7 +103,7 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" ht
  ]
 ```
 
-This endpoint retrieves all contacts.
+<aside class="notice">This endpoint retrieves all contacts.</aside>
 
 ### HTTP Request
 
@@ -141,7 +141,7 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" ht
  ]
 ```
 
-This endpoint retrieves a specific contact.
+<aside class="notice">This endpoint retrieves a specific contact.</aside>
 
 
 ### HTTP Request
@@ -179,7 +179,7 @@ curl -i -X POST -H "Content-Type: application/json" -d "{""name"":""Hotel1"",""l
  ]
 ```
 
-This endpoint create a contact.
+<aside class="notice">This endpoint create a contact.</aside>
 
 ### HTTP Request
 
@@ -225,7 +225,7 @@ curl -i -X PUT -H "Content-Type: application/json" -d "{""id"":""1"",""name"":""
  ]
 ```
 
-This endpoint update a specific contact.
+<aside class="notice">This endpoint update a specific contact.</aside>
 
 
 ### HTTP Request
@@ -263,7 +263,7 @@ curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""2""}" https:
  ]
 ```
 
-This endpoint delete a specific contact.
+<aside class="notice">This endpoint delete a specific contact.</aside>
 
 
 ### HTTP Request
