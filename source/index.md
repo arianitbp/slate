@@ -28,7 +28,6 @@ You can export all of your data if you no longer want to use Parse.
 This example API documentation page was created with [Slate](http://github.com/tripit/slate).
 
 
-
 # Contacts
 
 ## Get All Contacts
