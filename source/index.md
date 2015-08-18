@@ -161,8 +161,8 @@ ID | auto-increment, false | integer | ID of a contact generated automatically.
 Name | true | text | If set to false, the result will include contacts that have already been adopted.
 LastName | false | text | If set to true, the result will also include contacts.
 Address | false | text | If set to true, the result will also include contacts.
-PhoneNumber1 | false | text | If set to true, the result will also include contacts.
 Email | false | text | If set to true, the result will also include contacts.
+PhoneNumber1 | false | text | If set to true, the result will also include contacts.
 PhoneNumber2 | false | text | If set to true, the result will also include contacts.
 PhoneNumber3 | false | text | If set to true, the result will also include contacts.
 PhoneNumber4 | false | text | If set to true, the result will also include contacts.
@@ -200,8 +200,8 @@ ID | true | integer | ID of a contact to update.
 Name | false | text | If set to true, it will change the name of contact.
 LastName | false | text | If set to true, it will change the lastname of contact.
 Address | false | text | If set to true, it will change the address of contact.
-PhoneNumber1 | false | text | If set to true, it will change the phone number of contact.
 Email | false | text | If set to true, it will change the email of contact.
+PhoneNumber1 | false | text | If set to true, it will change the phone number of contact.
 PhoneNumber2 | false | text | If set to true, it will change the phone number of contact.
 PhoneNumber3 | false | text | If set to true, it will change the phone number of contact.
 PhoneNumber4 | false | text | If set to true, it will change the phone number of contact.
