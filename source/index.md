@@ -25,7 +25,7 @@ You can download recent data to run your own custom analytics.
 Applications written in any programming language can interact with data on Parse.
 You can export all of your data if you no longer want to use Parse.
 
-
+This example API documentation page was created with [Slate] https://github.com/arianitbp/slate.
 
 
 
@@ -190,8 +190,16 @@ This endpoint create a contact.
 
 Parameter | Default | Description
 --------- | ------- | -----------
-contacts | false | If set to true, the result will also include contacts.
-available | true | If set to false, the result will include contacts that have already been adopted.
+ID | auto-increment | ID of a contact generated automatically.
+Name | true | If set to false, the result will include contacts that have already been adopted.
+LastName | false | If set to true, the result will also include contacts.
+Address | false | If set to true, the result will also include contacts.
+PhoneNumber1 | false | If set to true, the result will also include contacts.
+Email | false | If set to true, the result will also include contacts.
+PhoneNumber2 | false | If set to true, the result will also include contacts.
+PhoneNumber3 | false | If set to true, the result will also include contacts.
+PhoneNumber4 | false | If set to true, the result will also include contacts.
+PhoneNumber5 | false | If set to true, the result will also include contacts.
 
 ## Put a Contact
 
@@ -227,9 +235,18 @@ This endpoint update a specific contact.
 
 ### URL Parameters
 
-Parameter | Description
---------- | -----------
-ID | The ID of the contact to retrieve
+Parameter | Default | Description
+--------- | ------- | -----------
+ID | true | ID of a contact to update.
+Name | false | If set to true, it will change the name of contact.
+LastName | false | If set to true, it will change the lastname of contact.
+Address | false | If set to true, it will change the address of contact.
+PhoneNumber1 | false | If set to true, it will change the phone number of contact.
+Email | false | If set to true, it will change the email of contact.
+PhoneNumber2 | false | If set to true, it will change the phone number of contact.
+PhoneNumber3 | false | If set to true, it will change the phone number of contact.
+PhoneNumber4 | false | If set to true, it will change the phone number of contact.
+PhoneNumber5 | false | If set to true, it will change the phone number of contact.
 
 ## Delete a Contact
 
