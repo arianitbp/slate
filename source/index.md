@@ -220,7 +220,7 @@ curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""2""}" "https
 ```json
  [
     {
-      "success": "Contact updated with success in the database."
+      "success": "Contact deleted with success in the database."
     }
  ]
 ```
