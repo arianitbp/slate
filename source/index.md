@@ -25,7 +25,7 @@ You can download recent data to run your own custom analytics.
 Applications written in any programming language can interact with data on Parse.
 You can export all of your data if you no longer want to use Parse.
 
-This example API documentation page was created with [Slate](http://github.com/tripit/slate).
+This example API documentation page was created with [Slate](http://github.com/arianitbp/slate).
 
 
 # Contacts
