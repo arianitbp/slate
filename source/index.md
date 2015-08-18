@@ -39,71 +39,46 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" ht
 > The above command returns JSON structured like this:
 
 ```json
- [
-     {
-      "id": 1,
-      "name": "Hotel1",
-      "lastname": "KeyApp1",
-      "address": "Prishtine1",
-      "phonenumber1": "+38649111111",
-      "email": "hotel1@keyapp.com",
-      "phonenumber2": "+38649222222",
-      "phonenumber3": "+38649333333",
-      "phonenumber4": "+38649444444",
-      "phonenumber5": "+38649555555"
-    },
-    {
-      "id": 2,
-      "name": "Hotel2",
-      "lastname": "KeyApp2",
-      "address": "Prishtine2",
-      "phonenumber1": "+38649111111",
-      "email": "hotel2@keyapp.com",
-      "phonenumber2": "+38649222222",
-      "phonenumber3": "+38649333333",
-      "phonenumber4": "+38649444444",
-      "phonenumber5": "+38649555555"
-    },
-    {
-      "id": 3,
-      "name": "Hotel3",
-      "lastname": "KeyApp3",
-      "address": "Prishtine3",
-      "phonenumber1": "+38649111111",
-      "email": "hotel3@keyapp.com",
-      "phonenumber2": "+38649222222",
-      "phonenumber3": "+38649333333",
-      "phonenumber4": "+38649444444",
-      "phonenumber5": "+38649555555"
-    },
-    {
-      "id": 4,
-      "name": "Hotel4",
-      "lastname": "KeyApp4",
-      "address": "Prishtine4",
-      "phonenumber1": "+38649111111",
-      "email": "hotel4@keyapp.com",
-      "phonenumber2": "+38649222222",
-      "phonenumber3": "+38649333333",
-      "phonenumber4": "+38649444444",
-      "phonenumber5": "+38649555555"
-    },
-    {
-      "id": 5,
-      "name": "Hotel5",
-      "lastname": "KeyApp5",
-      "address": "Prishtine5",
-      "phonenumber1": "+38649111111",
-      "email": "hotel5@keyapp.com",
-      "phonenumber2": "+38649222222",
-      "phonenumber3": "+38649333333",
-      "phonenumber4": "+38649444444",
-      "phonenumber5": "+38649555555"
-    }
- ]
+{   "success": "Database Read with success.",
+	 "data":[
+				 {
+				  "id": 1,
+				  "name": "Hotel1",
+				  "lastname": "KeyApp1",
+				  "address": "Prishtine1",
+				  "email": "hotel1@keyapp.com",
+				  "phonenumber1": "+38649111111",
+				  "phonenumber2": "+38649222222",
+				  "phonenumber3": "+38649333333",
+				  "phonenumber4": "+38649444444",
+				  "phonenumber5": "+38649555555"
+				},
+				{
+				  "id": 2,
+				  "name": "Hotel2",
+				  "lastname": "KeyApp2",
+				  "address": "Prishtine2",
+				  "email": "hotel2@keyapp.com",
+				  "phonenumber1": "+38649111111",
+				  "phonenumber4": "+38649444444",
+				  "phonenumber5": "+null"
+				},
+				{
+				  "id": 3,
+				  "name": "Hotel3",
+				  "lastname": "KeyApp3",
+				  "address": "Prishtine3",
+				  "email": "hotel3@keyapp.com",
+				  "phonenumber2": "0038649222222",
+				  "phonenumber3": "0038649333333",
+				  "phonenumber4": "0038649444444",
+				}
+  
+			]
+}
 ```
 
-<aside class="notice">This endpoint retrieves all contacts.</aside>
+- This endpoint retrieves all contacts.
 
 ### HTTP Request
 
@@ -125,23 +100,25 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" ht
 > The above command returns JSON structured like this:
 
 ```json
-[
-    {
-      "id": 1,
-      "name": "Hotel1",
-      "lastname": "KeyApp1",
-      "address": "Prishtine1",
-      "phonenumber1": "+38649111111",
-      "email": "hotel1@keyapp.com",
-      "phonenumber2": "+38649222222",
-      "phonenumber3": "+38649333333",
-      "phonenumber4": "+38649444444",
-      "phonenumber5": "+38649555555"
-    }
- ]
+{   "success": "Database Read with success.",
+	 "data":[
+				 {
+				  "id": 1,
+				  "name": "Hotel1",
+				  "lastname": "KeyApp1",
+				  "address": "Prishtine1",
+				  "email": "hotel1@keyapp.com",
+				  "phonenumber1": "+38649111111",
+				  "phonenumber2": "+38649222222",
+				  "phonenumber3": "+38649333333",
+				  "phonenumber4": "+38649444444",
+				  "phonenumber5": "+38649555555"
+				},  
+			]
+}
 ```
 
-<aside class="notice">This endpoint retrieves a specific contact.</aside>
+- This endpoint retrieves a specific contact.
 
 
 ### HTTP Request
@@ -153,6 +130,8 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" ht
 Parameter | Description
 --------- | -----------
 ID | The ID of the contact to retrieve
+
+<aside class="warning">This will returns an error if you don't use any ID.</aside>
 
 ## Post a Contact
 
