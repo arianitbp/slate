@@ -112,18 +112,6 @@ This endpoint retrieves all contacts.
 
 ### Query Parameters
 
-Parameter | Default | Description
---------- | ------- | -----------
-ID | false | If set to true, the result will also include contacts.
-Name | true | If set to false, the result will include contacts that have already been adopted.
-LastName | false | If set to true, the result will also include contacts.
-Address | false | If set to true, the result will also include contacts.
-PhoneNumber1 | false | If set to true, the result will also include contacts.
-Email | false | If set to true, the result will also include contacts.
-PhoneNumber2 | false | If set to true, the result will also include contacts.
-PhoneNumber3 | false | If set to true, the result will also include contacts.
-PhoneNumber4 | false | If set to true, the result will also include contacts.
-PhoneNumber5 | false | If set to true, the result will also include contacts.
 
 <aside class="success">
 Remember — a happy contact is an authenticated contact!
