@@ -33,7 +33,7 @@ This example API documentation page was created with [Slate](http://github.com/a
 ## Get All Contacts
 
 ```shell
-curl -X GET -H "Content-type: application/json" -H "Accept: application/json" https://whispering-garden-5307.herokuapp.com/api/db
+curl -X GET -H "Content-type: application/json" -H "Accept: application/json" "https://whispering-garden-5307.herokuapp.com/api/db"
 ```
 
 > The above command returns JSON structured like this:
@@ -93,7 +93,7 @@ Remember — a happy contact is an authenticated contact!
 ## Get a Specific Contact
 
 ```shell
-curl -X GET -H "Content-type: application/json" -H "Accept: application/json" https://whispering-garden-5307.herokuapp.com/api/db/<ID>
+curl -X GET -H "Content-type: application/json" -H "Accept: application/json" "https://whispering-garden-5307.herokuapp.com/api/db/<ID>"
 ```
 
 > The above command returns JSON structured like this:
@@ -135,7 +135,8 @@ ID | The ID of the contact to retrieve
 ## Post a Contact
 
 ```shell
-curl -i -X POST -H "Content-Type: application/json" -d "{""name"":""Hotel1"",""lastname"":""KeyApp1"",""address"":""Prishtine1"",""phonenumber1"":""+38649111111"",""email"":""hotel1@keyapp.com"",""phonenumber2"":""+38649222222"",""phonenumber3"":""+38649333333"",""phonenumber4"":""+38649444444"",""phonenumber5"":""+38649555555""}" https://whispering-garden-5307.herokuapp.com/api/db
+curl -i -X POST -H "Content-Type: application/json" -d "{""name"":""Hotel1"",""lastname"":""KeyApp1"",""address"":""Prishtine1"",""phonenumber1"":""+38649111111"",""email"":""hotel1@keyapp.com"",""phonenumber2"":""+38649222222"",""phonenumber3"":""+38649333333"",""phonenumber4"":""+38649444444"",""phonenumber5"":""+38649555555""}" 
+"https://whispering-garden-5307.herokuapp.com/api/db"
 ```
 
 > The above command returns JSON structured like this:
@@ -172,7 +173,8 @@ PhoneNumber5 | false | text | If set to true, the result will also include conta
 ## Put a Contact
 
 ```shell
-curl -i -X PUT -H "Content-Type: application/json" -d "{""id"":""1"",""name"":""Hotel1"",""lastname"":""KeyApp1"",""address"":""Prishtine1"",""phonenumber1"":""+38649111111"",""email"":""hotel1@keyapp.com"",""phonenumber2"":""+38649222222"",""phonenumber3"":""+38649333333"",""phonenumber4"":""+38649444444"",""phonenumber5"":""+38649555555""}" https://whispering-garden-5307.herokuapp.com/api/db
+curl -i -X PUT -H "Content-Type: application/json" -d "{""id"":""1"",""name"":""Hotel1"",""lastname"":""KeyApp1"",""address"":""Prishtine1"",""phonenumber1"":""+38649111111"",""email"":""hotel1@keyapp.com"",""phonenumber2"":""+38649222222"",""phonenumber3"":""+38649333333"",""phonenumber4"":""+38649444444"",""phonenumber5"":""+38649555555""}" 
+"https://whispering-garden-5307.herokuapp.com/api/db"
 ```
 
 > The above command returns JSON structured like this:
@@ -210,7 +212,7 @@ PhoneNumber5 | false | text | If set to true, it will change the phone number of
 ## Delete a Contact
 
 ```shell
-curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""2""}" https://whispering-garden-5307.herokuapp.com/api/db"
+curl -i -X DELETE -H "Content-Type: application/json" -d "{""id"":""2""}" "https://whispering-garden-5307.herokuapp.com/api/db"
 ```
 
 > The above command returns JSON structured like this:
