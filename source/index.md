@@ -72,7 +72,7 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" "h
 				  "phonenumber2": "0038649222222",
 				  "phonenumber3": "0038649333333",
 				  "phonenumber4": "0038649444444",
-				}
+				},
 			]
 }
 ```
