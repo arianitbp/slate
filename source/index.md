@@ -39,7 +39,7 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" "h
 > The above command returns JSON structured like this:
 
 ```json
-{   "success": "Database Read with success.",
+{   "success": "Database readed with success.",
 	 "data":[
 				 {
 				  "id": 1,
@@ -118,7 +118,6 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" "h
 ```
 
 - This endpoint retrieves a specific contact.
-
 
 
 ### HTTP Request
