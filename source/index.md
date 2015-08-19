@@ -120,6 +120,7 @@ curl -X GET -H "Content-type: application/json" -H "Accept: application/json" "h
 - This endpoint retrieves a specific contact.
 
 
+
 ### HTTP Request
 
 `GET https://whispering-garden-5307.herokuapp.com/api/db/<ID>`
